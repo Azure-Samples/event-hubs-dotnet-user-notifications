@@ -6,7 +6,7 @@ author: spyrossak
 
 # Notify users of events received by an event or IoT hub #
 
-If you are using Azure Stream Analytics or Azure Machine Learning to generate alerts based upon data coming from your devices, you have various options on how to display those alerts. For example, as in the [Connect The Dots](https://github.com/Azure/connectthedots) project, you could display them on a website, so users could see them in real-time if they are looking at a web page. By contrast, the code here, in the [AppToNotifyUsers](https://github.com/Azure-Samples/event-hubs-dotnet-user-notifications/blob/master/AppToNotifyUsers.sln) solution, provides a very basic and stand-alone application for selected users to be notified of alerts. It does so by creating an Azure Cloud Service (worker role) that monitors the assigned event hub and pushes that data to a notification service specified by the administrator. Notification options in the solution include:
+If you are using Azure Stream Analytics or Azure Machine Learning to generate alerts based upon data coming from your devices, you have various options on how to display those alerts. For example, as in the [Connect The Dots](https://github.com/Azure/connectthedots) project, you could display them on a website, so users could see them in real-time if they are looking at a web page. By contrast, the code here, in the [AppToNotifyUsers](https://github.com/Azure-Samples/event-hubs-dotnet-user-notifications) solution, provides a very basic and stand-alone application for selected users to be notified of alerts. It does so by creating an Azure Cloud Service (worker role) that monitors the assigned event hub and pushes that data to a notification service specified by the administrator. Notification options in the solution include:
 
 - SMTP
 - SMS
@@ -38,7 +38,7 @@ Setting up the application once you have an Event Hub and its Connection String 
 
 1. Get and set up a subscription for the notification service of your choice
 2. Clone or copy the project to your machine 
-2. Open [AppToNotifyUsers.sln](https://github.com/Azure-Samples/event-hubs-dotnet-user-notifications/blob/master/AppToNotifyUsers.sln) solution in Visual Studio
+2. Open AppToNotifyUsers.sln solution in Visual Studio
 3. Edit App.config in the Worker Host folder to provide the following
 	1. The connection string to your Event Hub
 	2. The URL for the web service which you will use to push the data
