@@ -4,7 +4,7 @@ platforms: dotnet
 author: spyrossak
 ---
 
-# Notify users of events received by an event or IoT hub #
+# Notify users of events received by an event or IoT hub
 
 For more information about this sample, see the [Notify users of data received from sensors or other systems](https://github.com/Azure-Samples/event-hubs-dotnet-user-notifications/blob/master/event-hubs-sensors-notify-users.md) topic in this repository.
 
